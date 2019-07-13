@@ -1,0 +1,290 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author:Sourabh" content="My Website">
+    <title>Sourabh Sharma | Welcome</title>
+    <link rel="shortcut icon" href="/static/images/fevicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+    
+<body>
+    
+    <header>
+        <div class="name_heading">
+            <div id="nameSpace">
+                <h1>Sourabh Sharma</h1>
+            </div>
+            <ul>
+            <div id="redirect">    
+                <li style="display:inline;"><a title="Instagram" href="http:instagram.com/sourabh.py"><img src="/static/images/insta_redirect.png" width="auto" height="35px"></a></li>
+                <li style="display:inline;"><a title="Mail" href="mailto:saurabhsharmasg76@gmail.com"><img src="/static/images/email_redirect.png" width="auto" height="35px"></a></li>
+                <li style="display:inline;"><a title="LinkedIn" href="http://linkedin.com/in/SaurZ"><img src="/static/images/linkedIn_redirect.png" width="auto" height="35px"></a></li>
+                <li style="display:inline"><a title="GitHub" href="http://github.com/SaurZ"><img src="/static/images/github_redirect.png" width="auto" height="35px"></a></li>
+            </div>
+            </ul>
+        </div>
+    </header>    
+    
+    <article>
+        <div id="main">
+            <div class="intro">
+                <div class="content">
+                    <div id="contentImage">
+                        <img src="/static/images/SOURABH2.jpg" width="100%" height="auto" draggable="false">
+                    </div>
+                </div>
+                <div class="content">
+                    <div id="contentText">
+                        <p>I'm a WEB DEV, and I sleep when I ain't busy with my lappy. I'm 9+9, and I code things. Not programs, but things.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main">
+            <div class="content">
+                <div id="quoteSymbol">
+                    <img src="/static/images/quotes.png" width="25%" height="auto">
+                </div>
+            </div>
+            <div class="content">
+                <div id="quoteText">
+                    <p>Failure after long perseverance is much grander than never to have a striving good enough to be called a failure.</p>
+                </div>
+                <div id="b-m-s">
+                    <p> - George Eliot</p>
+                </div>
+            </div>
+        </div>
+    </article>
+    
+    <div class="projects">
+        <div class="heading">
+            <h1>Projects</h1>
+            <ul>
+                <a title="Hidden for now" href="#"><li>AInect</li></a>
+                <a title="Hidden for now" href="#"><li>My Website (The current Web Page)</li></a>
+                <a title="Hidden for now" href="#"><li>The mind reader algorithm</li></a>
+                <a title="Hidden for now" href="#"><li>insTap</li></a>
+            </ul>
+        </div>
+        <div id="project_element1">
+            <h3>AInect</h3>    
+            <p>AInect is an Arificial Intelligent Social Networking website, which uses the concepts of pure Machine Learning to completely understand and track the record of your likes/dislikes based upon your recent activities like your reactions everytime when you get to see an image of your interest, or the way you interact with people. Or in simple language, we are creating a social networking friend for you, who likes to keep your secrets.</p>
+        </div>
+    </div>
+    
+    <div class="slider">
+        <div class="slide" id="slide_1"><img src="/static/images/screenshot.png" width="auto" height="350px"></div>
+        <div class="slide" id="slide_3"><img src="/static/images/screenshot3.png" width="auto" height="350px"></div>
+    </div>
+    
+    <div class="sideContent">
+        <div id="sideText">
+            <p>I code most of the time, and play games when not learning something. I like listening to music, but I would like to have absolute silence at my workplace.</p>
+        </div>
+    </div>
+    
+    <div id="map"></div>
+     <script>
+
+      function initMap() {
+        var myLatLng = {lat: 31.248514, lng: 75.698897};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 18,
+          center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Sourabh stays here.'
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHTt9SdNWUPw2kFUnXl74KvJIClkSfOps&callback=initMap"></script>
+    
+    <div id="message_me">
+        <form method="post" action="http://localhost:8000/message/"> {% csrf_token %}
+            <textarea rows="5" placeholder="Write something..." name="message" style="resize:none; width:100%; margin:20px 0; box-shadow:1px 0 5px; border-radius:10px; font-size:15px; font-family:sans-serif; padding:5px 10px; outline:none;"></textarea>
+            <button type="submit" style="font-size:15rpx; padding:10px 15px; border-radius:15px; box-shadow:1px 1px 5px #000000; border:none;  transition:0.5s;">SEND!</button>
+        </form>
+    </div>
+    
+    <div id="message">
+        <div id="p-u-n"><p>Want to collab? Contact here ----</p></div>
+            <ul><li><a title="Instagram" href="http:instagram.com/sourabh.py"><img src="/static/images/insta_redirect.png" width="auto" height="35px"></a></li>
+            <li><a title="Mail" href="mailto:saurabhsharmasg76@gmail.com"><img src="/static/images/email_redirect.png" width="auto" height="35px"></a></li>
+            <li><a title="LinkedIn" href="http://linkedin.com/in/SaurZ"><img src="/static/images/linkedIn_redirect.png" width="auto" height="35px"></a></li>
+            <li><a title="GitHub" href="http://github.com/SaurZ"><img src="/static/images/github_redirect.png" width="auto" height="35px"></a></li></ul>
+        <div id="p-u-w"><p>I love being busy, so I keep digging out for new ideas/projects to work on. If in case you want me to collab with you, just let me know via any of these social networking platforms, we may work together :) </p></div>
+        <div id="b-m-0">
+            <p>Also, if you want to work with me for my project AInect, please register for it here  --  </p> 
+            <p><a href="http://shortto.com/ainect">AInect Registration</a></p>
+        </div>
+    </div>
+    
+    <div id="gallery">
+        <div class="gallery_profile_pic">
+            <img src="/static/images/SOURABH2.jpg" width="90px" height="auto" draggable="false">
+        </div>
+        <div class="gallery_head">
+            <h>Sourabh Sharma</h>
+            <p id="gallery_head_el_1">5 Photos</p>
+        </div>
+        <div class="gallery_red_insta">
+            <p>Visit my</p><a href="http://instagram.com/sourabh.py"><img src="images/insta_redirect2.png" draggable="false" width="150px" height="auto"></a>
+        </div>
+        <div class="photos">
+            <div class="user_photo">
+                <img id="modalBtn" src="/static/images/SOURABH7.jpg" height="300px" width="300px" draggable="false" style="float:left;">
+            </div>
+            <div class="user_photo">
+                <img id="modalBtn2" src="/static/images/SOURABH8.jpg" height="300px" width="300px" draggable="false" style="float:left;">
+            </div>
+            <div class="user_photo">
+                <img id="modalBtn3" src="/static/images/SOURABH9.jpg" height="300px" width="300px" draggable="false" style="float:left;">
+            </div>
+            <div class="user_photo">
+                <img id="modalBtn4" src="/static/images/SOURABH5.jpg" height="300px" width="300px" draggable="false" style="float:left;">
+            </div>
+            <div class="user_photo">
+                <img id="modalBtn5" src="/static/images/SOURABH6.jpg" height="300px" width="300px" draggable="false" style="float:left">
+            </div>
+            <div class="user_photo">
+                <img id="modalBtn6" src="/static/images/SOURABH2.jpg" height="300px" width="300px" draggable="false" style="float:left">
+            </div>
+            <div class="user_photo">
+                <img id="modalBtn7" src="/static/images/SOURABH3.jpg" height="300px" width="300px" draggable="false" style="float:left">
+            </div>
+            <div class="user_photo">
+                <img id="modalBtn8" src="/static/images/SOURABH4.jpg" height="300px" width="300px" draggable="false">
+            </div>
+        </div>
+    </div>
+    
+    <div id="l_b_mod" class="mod">
+        <div class="mod_content">
+            <span class="close_b" title="Close">&times;</span>
+            <center>
+                <img src="/static/images/SOURABH7.jpg" width="auto"; height="450px">   
+            </center>
+            <div class="pic_caption">
+                <p>** A random immature teenager quote **</p>
+            </div>
+        </div>
+    </div>
+    <div id="l_b_mod2" class="mod2">
+        <div class="mod_content2">
+            <span class="close_b2" title="Close">&times;</span>
+            <center>
+                <img src="/static/images/SOURABH8.jpg" width="auto"; height="450px">
+            </center>
+            <div class="pic_caption">
+                <p>** A random immature teenager quote 2**</p>
+            </div>
+        </div>
+    </div>
+    <div id="l_b_mod3" class="mod3">
+        <div class="mod_content3">
+            <span class="close_b3" title="Close">&times;</span>
+            <center>
+                <img src="/static/images/SOURABH9.jpg" width="auto"; height="450px">
+            </center>
+            <div class="pic_caption">
+                <p>I know I'm pretty good at debating XOXO</p>
+            </div>
+        </div>
+    </div>
+    <div id="l_b_mod4" class="mod4">
+        <div class="mod_content4">
+            <span class="close_b4" title="Close">&times;</span>
+            <center>
+                <img src="/static/images/SOURABH5.jpg" width="auto"; height="450px">
+            </center>
+            <div class="pic_caption">
+                <p>A bunch of ugly people...</p>
+            </div>
+        </div>
+    </div>
+    <div id="l_b_mod5" class="mod5">
+        <div class="mod_content5">
+            <span class="close_b5" title="Close">&times;</span>
+            <center>
+                <img src="/static/images/SOURABH6.jpg" width="auto"; height="450px">
+            </center>
+            <div class="pic_caption">
+                <p>This is my noobie friend :|</p>
+            </div>
+        </div>
+    </div>
+    <div id="l_b_mod6" class="mod6">
+        <div class="mod_content6">
+            <span class="close_b6" title="Close">&times;</span>
+            <center>
+                <img src="/static/images/SOURABH2.jpg" width="auto"; height="450px">
+            </center>
+            <div class="pic_caption">
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <div id="l_b_mod7" class="mod7">
+        <div class="mod_content7">
+            <span class="close_b7" title="Close">&times;</span>
+            <center>
+                <img src="/static/images/SOURABH3.jpg" width="auto"; height="450px">
+            </center>
+            <div class="pic_caption">
+                <p>XOXO</p>
+            </div>
+        </div>
+    </div>
+    <div id="l_b_mod8" class="mod8">
+        <div class="mod_content8">
+            <span class="close_b8" title="Close">&times;</span>
+            <center>
+                <img src="/static/images/SOURABH4.jpg" width="auto"; height="450px">
+            </center>
+            <div class="pic_caption">
+                <p>XOXO</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="message">
+        <p style="font-size:25px;">That's just it for now. Other projects are just under development, so gotta keep some secrets...</p>
+    </div>
+    
+    <div id="default">
+        <p>*The graphics/animations/pictures used in the designing of this webpage are not owned by me, and belong to the respective owners.</p>
+    </div>
+    
+    <div id="footer">
+        <p>Sourabh Sharma &copy; 2019</p>
+    </div>
+
+    <script src="/static/functions.js"></script>
+
+</body>    
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
