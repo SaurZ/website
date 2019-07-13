@@ -106,7 +106,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHTt9SdNWUPw2kFUnXl74KvJIClkSfOps&callback=initMap"></script>
     
     <div id="message_me">
-        <form method="post" action="http://localhost:8000/message/"> {% csrf_token %}
+        <form method="post" action="{% url 'message' %}"> {% csrf_token %}
             <textarea rows="5" placeholder="Write something..." name="message" style="resize:none; width:100%; margin:20px 0; box-shadow:1px 0 5px; border-radius:10px; font-size:15px; font-family:sans-serif; padding:5px 10px; outline:none;"></textarea>
             <button type="submit" style="font-size:15rpx; padding:10px 15px; border-radius:15px; box-shadow:1px 1px 5px #000000; border:none;  transition:0.5s;">SEND!</button>
         </form>

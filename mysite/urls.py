@@ -15,11 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf import settings
 from mysite.views import save_message, front
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('message/',save_message, name="message"),
     path('index/',front, name="front"),
+    path('',front, name="front1")
     
 ]
